@@ -20,16 +20,28 @@ const NAV = [
   { id: "contact", label: "Contact" },
 ];
 
+import livingBlue from "@/assets/gallery/living-blue.jpg";
+import livingLeather from "@/assets/gallery/living-leather.jpg";
+import bathroomShower from "@/assets/gallery/bathroom-shower.jpg";
+import bathroomVanity from "@/assets/gallery/bathroom-vanity.jpg";
+import bedroomWarm from "@/assets/gallery/bedroom-warm.jpg";
+import kitchen1 from "@/assets/gallery/kitchen-1.jpg";
+import bedroomSuite from "@/assets/gallery/bedroom-suite.jpg";
+import bedroomClassic from "@/assets/gallery/bedroom-classic.jpg";
+import kitchenBar from "@/assets/gallery/kitchen-bar.jpg";
+import dining from "@/assets/gallery/dining.jpg";
+
 const GALLERY = [
-  { url: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900", alt: "Modern bright living room", span: true },
-  { url: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600", alt: "Cozy bedroom with natural light" },
-  { url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600", alt: "Modern fully equipped kitchen" },
-  { url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600", alt: "Luxury en-suite bathroom" },
-  { url: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600", alt: "Spacious dining area" },
-  { url: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600", alt: "Apartment building exterior" },
-  { url: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600", alt: "Outdoor garden relaxation" },
-  { url: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600", alt: "Second bedroom interior" },
-  { url: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=600", alt: "Kigali cityscape aerial view" },
+  { url: livingBlue, alt: "Bright living room with blue sofa and modern decor", span: true },
+  { url: bedroomWarm, alt: "Warm master bedroom with king bed" },
+  { url: kitchen1, alt: "Fully equipped modern kitchen" },
+  { url: bathroomShower, alt: "En-suite bathroom with rain shower" },
+  { url: dining, alt: "Spacious dining area with chandelier" },
+  { url: livingLeather, alt: "Elegant living room with leather sofas" },
+  { url: bedroomSuite, alt: "Luxury bedroom suite with tray ceiling" },
+  { url: bathroomVanity, alt: "Modern double-vanity bathroom" },
+  { url: bedroomClassic, alt: "Classic bedroom with lounge seating" },
+  { url: kitchenBar, alt: "Open kitchen with breakfast bar" },
 ];
 
 function TripleGSite() {
