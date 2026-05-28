@@ -695,18 +695,18 @@ function Location() {
 
             <div className="mt-6 space-y-3">
               {dests.map(([e, name, dist]) => (
-                <div key={name} className="flex items-center justify-between rounded-lg bg-white px-5 py-3.5 shadow-sm ring-1 ring-border">
-                  <div className="flex items-center gap-3">
-                    <span className="text-xl">{e}</span>
-                    <span className="text-sm font-medium text-charcoal">{name}</span>
+                <div key={name} className="flex items-center justify-between gap-3 rounded-lg bg-white px-4 py-3.5 shadow-sm ring-1 ring-border sm:px-5">
+                  <div className="flex min-w-0 flex-1 items-center gap-3">
+                    <span className="shrink-0 text-xl">{e}</span>
+                    <span className="min-w-0 text-sm font-medium text-charcoal">{name}</span>
                   </div>
-                  <span className="text-sm font-semibold text-brand-red">{dist}</span>
+                  <span className="shrink-0 text-sm font-semibold text-brand-red">{dist}</span>
                 </div>
               ))}
             </div>
 
-            <div className="my-6 rounded-lg border-2 border-brand-gold bg-white px-5 py-4">
-              <div className="text-base font-bold text-charcoal">📅 Check-in: 2:00 PM &nbsp;|&nbsp; Check-out: 11:00 AM</div>
+            <div className="my-6 rounded-lg border-2 border-brand-gold bg-white px-4 py-4 sm:px-5">
+              <div className="text-sm font-bold text-charcoal sm:text-base">📅 Check-in: 2:00 PM <span className="hidden sm:inline">&nbsp;|&nbsp;</span><span className="sm:hidden"><br/></span>Check-out: 11:00 AM</div>
               <div className="mt-1 text-xs text-brand-gray">Early check-in & late check-out available (fee applies)</div>
             </div>
 
@@ -877,13 +877,13 @@ function Booking() {
                 ["🕐", "Hours", "Check-in: 2:00 PM | Check-out: 11:00 AM", ""],
               ].map(([e, l, v, href]) => (
                 <li key={l} className="flex items-start gap-3 rounded-lg bg-white p-4 shadow-sm">
-                  <span className="text-xl">{e}</span>
-                  <div>
+                  <span className="shrink-0 text-xl">{e}</span>
+                  <div className="min-w-0 flex-1">
                     <div className="text-xs font-semibold uppercase tracking-wider text-brand-gray">{l}</div>
                     {href ? (
-                      <a href={href} className="text-sm font-medium text-charcoal hover:text-brand-red">{v}</a>
+                      <a href={href} className="block break-words text-sm font-medium text-charcoal hover:text-brand-red">{v}</a>
                     ) : (
-                      <div className="text-sm font-medium text-charcoal">{v}</div>
+                      <div className="break-words text-sm font-medium text-charcoal">{v}</div>
                     )}
                   </div>
                 </li>
