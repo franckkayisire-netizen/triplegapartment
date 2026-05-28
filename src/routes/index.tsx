@@ -346,7 +346,7 @@ function About() {
           <img
             src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200"
             alt="Modern furnished living room at Triple G Apartments"
-            className="h-[420px] w-full rounded-lg object-cover shadow-xl lg:h-[520px]"
+            className="h-[300px] w-full rounded-lg object-cover shadow-xl sm:h-[420px] lg:h-[520px]"
           />
           <div className="absolute -bottom-5 left-5 rounded bg-brand-gold px-5 py-3 text-charcoal shadow-lg">
             <div className="text-sm font-bold">RHA Member</div>
