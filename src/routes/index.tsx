@@ -358,7 +358,7 @@ function About() {
           <img
             src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200"
             alt="Modern furnished living room at Triple G Apartments"
-            className="h-[300px] w-full rounded-lg object-cover shadow-xl sm:h-[420px] lg:h-[520px]"
+            className="aspect-[4/3] w-full rounded-lg object-cover shadow-xl sm:aspect-[4/3] lg:aspect-[5/4]"
           />
           <div className="absolute -bottom-5 left-5 rounded bg-brand-gold px-5 py-3 text-charcoal shadow-lg">
             <div className="text-sm font-bold">RHA Member</div>
@@ -720,8 +720,7 @@ function Location() {
               title="Triple G Apartments Map"
               src="https://www.google.com/maps?q=Rusororo,Kigali,Rwanda&output=embed"
               width="100%"
-              height={520}
-              className="h-[320px] w-full sm:h-[420px] lg:h-[520px]"
+              className="aspect-[4/3] w-full sm:aspect-[16/10] lg:aspect-[4/3]"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
