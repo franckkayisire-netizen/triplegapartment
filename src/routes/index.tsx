@@ -85,9 +85,9 @@ function TripleGSite() {
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-7 right-7 z-40 grid h-[58px] w-[58px] place-items-center rounded-full bg-[#25d366] text-white shadow-[0_4px_20px_rgba(37,211,102,0.5)]"
+        className="fixed bottom-5 right-4 z-40 grid h-14 w-14 place-items-center rounded-full bg-[#25d366] text-white shadow-[0_4px_20px_rgba(37,211,102,0.5)] sm:bottom-7 sm:right-7 sm:h-[58px] sm:w-[58px]"
       >
-        <span className="text-[26px]">💬</span>
+        <span className="text-[24px] sm:text-[26px]">💬</span>
         <span className="pointer-events-none absolute inset-0 rounded-full bg-[#25d366] animate-pulse-ring" />
       </a>
 
@@ -96,7 +96,7 @@ function TripleGSite() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
-          className="fixed bottom-7 left-7 z-40 grid h-[46px] w-[46px] place-items-center rounded-full bg-brand-red text-white shadow-lg transition hover:bg-brand-red-dark"
+          className="fixed bottom-5 left-4 z-40 grid h-11 w-11 place-items-center rounded-full bg-brand-red text-white shadow-lg transition hover:bg-brand-red-dark sm:bottom-7 sm:left-7 sm:h-[46px] sm:w-[46px]"
         >
           <span className="text-xl leading-none">↑</span>
         </button>
