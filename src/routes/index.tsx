@@ -731,13 +731,12 @@ function Gallery({ onOpen }: { onOpen: (url: string) => void }) {
           <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">A Glimpse Inside Triple G</h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3">
           {GALLERY.map((g, i) => (
             <button
               key={i}
               onClick={() => onOpen(g.url)}
-              className={`group relative overflow-hidden rounded-lg ${g.span ? "md:col-span-2" : ""}`}
-              style={{ height: g.span ? 320 : 240 }}
+              className={`group relative aspect-[4/3] overflow-hidden rounded-lg sm:aspect-square ${g.span ? "md:col-span-2 md:aspect-[16/9]" : ""}`}
             >
               <img src={g.url} alt={g.alt} className="h-full w-full object-cover transition group-hover:scale-105" />
               <div className="absolute inset-0 grid place-items-center bg-brand-red/0 text-white opacity-0 transition group-hover:bg-brand-red/30 group-hover:opacity-100">
