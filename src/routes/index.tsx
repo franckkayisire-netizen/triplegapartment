@@ -227,18 +227,18 @@ function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-[rgba(31,41,55,0.7)]" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-5 pt-24 pb-16 text-center text-white">
-        <span className="inline-flex items-center gap-2 rounded-full bg-brand-red px-4 py-1.5 text-xs font-semibold text-white">
+      <div className="relative z-10 mx-auto w-full max-w-4xl px-4 pt-24 pb-16 text-center text-white sm:px-5">
+        <span className="inline-flex items-center gap-2 rounded-full bg-brand-red px-3 py-1.5 text-[11px] font-semibold text-white sm:px-4 sm:text-xs">
           🏆 Rwanda Hospitality Association Member
         </span>
 
-        <h1 className="mt-6 font-display text-[40px] font-bold leading-[1.1] sm:text-5xl md:text-6xl lg:text-[64px]">
+        <h1 className="mt-6 font-display text-[32px] font-bold leading-[1.15] sm:text-5xl md:text-6xl lg:text-[64px]">
           Discover Luxury Living
           <br />
           in the Heart of Kigali
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-base font-light leading-[1.7] text-white/90 sm:text-lg">
+        <p className="mx-auto mt-5 max-w-2xl text-sm font-light leading-[1.7] text-white/90 sm:mt-6 sm:text-lg">
           3 modern fully furnished apartments · 12 bedrooms total.
           <br className="hidden sm:block" />
           Book a single room from $65/night or entire apartment from $199/night.
@@ -246,14 +246,14 @@ function Hero() {
           200m from Intare Arena · 10 min from Kigali Airport & Health City.
         </p>
 
-        <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="#booking" className="inline-flex h-12 items-center justify-center rounded bg-brand-red px-7 font-semibold text-white transition hover:bg-brand-red-dark">
+        <div className="mt-8 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:items-center">
+          <a href="#booking" className="inline-flex h-12 items-center justify-center rounded bg-brand-red px-6 text-sm font-semibold text-white transition hover:bg-brand-red-dark sm:px-7 sm:text-base">
             Book Your Stay Now
           </a>
-          <a href="#apartments" className="inline-flex h-12 items-center justify-center rounded border-2 border-white px-7 font-semibold text-white transition hover:bg-white hover:text-charcoal">
+          <a href="#apartments" className="inline-flex h-12 items-center justify-center rounded border-2 border-white px-6 text-sm font-semibold text-white transition hover:bg-white hover:text-charcoal sm:px-7 sm:text-base">
             View Apartments
           </a>
-          <a href={WHATSAPP} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#25d366] px-7 font-semibold text-white transition hover:brightness-110">
+          <a href={WHATSAPP} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#25d366] px-6 text-sm font-semibold text-white transition hover:brightness-110 sm:px-7 sm:text-base">
             💬 WhatsApp Us
           </a>
         </div>
