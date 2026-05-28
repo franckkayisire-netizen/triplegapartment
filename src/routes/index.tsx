@@ -609,10 +609,10 @@ function PriceCard({ tone, title, badge, price, unit, strike, sub, priceTextClas
 
         <div className="mt-5 overflow-hidden rounded-lg border border-border">
           {rows.map((r, i) => (
-            <div key={i} className={`grid grid-cols-3 px-4 py-2.5 text-sm ${i % 2 ? "bg-brand-bg" : "bg-white"}`}>
+            <div key={i} className={`flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-2.5 text-sm ${i % 2 ? "bg-brand-bg" : "bg-white"}`}>
               <span className="text-brand-gray">{r[0]}</span>
-              <span className="font-semibold text-charcoal">{r[1]}</span>
-              <span className="text-right text-xs text-brand-red">{r[2] && `${r[2]} ✓`}</span>
+              <span className="ml-auto font-semibold text-charcoal">{r[1]}</span>
+              {r[2] && <span className="ml-auto whitespace-nowrap text-xs text-brand-red">{`${r[2]} ✓`}</span>}
             </div>
           ))}
         </div>
