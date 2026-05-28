@@ -146,10 +146,10 @@ function Navbar({
         scrolled ? "shadow-md" : "shadow-none"
       }`}
     >
-      <div className="mx-auto flex h-[70px] max-w-[1280px] items-center justify-between px-5">
-        <button onClick={() => linkClick("home")} className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-full bg-brand-red text-sm font-bold text-white">TG</span>
-          <span className="font-display text-[20px] font-bold text-charcoal">Triple G Apartments</span>
+      <div className="mx-auto flex h-[64px] max-w-[1280px] items-center justify-between gap-2 px-4 sm:h-[70px] sm:px-5">
+        <button onClick={() => linkClick("home")} className="flex min-w-0 items-center gap-2 sm:gap-3">
+          <span className="grid h-9 w-9 flex-none place-items-center rounded-full bg-brand-red text-sm font-bold text-white sm:h-10 sm:w-10">TG</span>
+          <span className="truncate font-display text-[16px] font-bold text-charcoal sm:text-[20px]">Triple G Apartments</span>
         </button>
 
         <nav className="hidden items-center gap-7 lg:flex">
