@@ -309,11 +309,11 @@ function About() {
   ];
 
   return (
-    <section id="about" className="bg-white py-24">
+    <section id="about" className="bg-white py-16 sm:py-24">
       <div className="mx-auto grid max-w-[1280px] gap-14 px-5 lg:grid-cols-[55%_45%] lg:items-center">
         <div>
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">About Us</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px] sm:leading-[1.1]">
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px] sm:leading-[1.1]">
             Welcome to Triple G Apartments
           </h2>
           <p className="mt-6 text-base leading-[1.8] text-brand-gray">
@@ -372,11 +372,11 @@ function Apartments() {
   }, [guests, nights]);
 
   return (
-    <section id="apartments" className="bg-brand-bg py-24">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="apartments" className="bg-brand-bg py-16 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Our Spaces</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">Flexible Booking Options</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">Flexible Booking Options</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-brand-gray">
             Book exactly what you need — a room, an apartment, or the entire property.
           </p>
@@ -633,11 +633,11 @@ function Amenities() {
     ["💼", "Workspace"], ["🚗", "Free Parking"], ["🍽️", "Breakfast Option"], ["🅿️", "2 Cars/Apartment"],
   ];
   return (
-    <section id="amenities" className="bg-brand-red py-24 text-white">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="amenities" className="bg-brand-red py-16 sm:py-24 text-white">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-white/90">What's Included</div>
-          <h2 className="mt-3 font-display text-4xl font-bold sm:text-[48px]">Everything You Need, Already Here</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold sm:text-[48px]">Everything You Need, Already Here</h2>
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -665,11 +665,11 @@ function Location() {
   ];
 
   return (
-    <section id="location" className="bg-white py-24">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="location" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Find Us</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">Perfectly Located in Kigali</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">Perfectly Located in Kigali</h2>
         </div>
 
         <div className="mt-12 grid gap-10 lg:grid-cols-[45%_55%] lg:items-start">
@@ -724,11 +724,11 @@ function Location() {
 /* ---------------- Gallery ---------------- */
 function Gallery({ onOpen }: { onOpen: (url: string) => void }) {
   return (
-    <section id="gallery" className="bg-brand-bg py-24">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="gallery" className="bg-brand-bg py-16 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Photo Gallery</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">A Glimpse Inside Triple G</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">A Glimpse Inside Triple G</h2>
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3">
@@ -776,11 +776,11 @@ function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="bg-white py-24">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="testimonials" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Guest Reviews</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">What Our Guests Say</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">What Our Guests Say</h2>
         </div>
 
         <div className="mt-12 grid gap-7 lg:grid-cols-3">
@@ -840,12 +840,12 @@ function Booking() {
   const input = "h-12 w-full rounded-lg border border-border bg-white px-4 text-sm text-charcoal outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20";
 
   return (
-    <section id="booking" className="bg-brand-bg py-24">
+    <section id="booking" className="bg-brand-bg py-16 sm:py-24">
       <a id="contact" className="block -mt-24 pt-24" />
-      <div className="mx-auto max-w-[1280px] px-5">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Book Now</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">Ready to Book? Let's Make It Happen</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">Ready to Book? Let's Make It Happen</h2>
           <p className="mx-auto mt-3 max-w-xl text-lg text-brand-gray">We respond within 1 hour · 7 days a week</p>
         </div>
 
@@ -957,7 +957,7 @@ function Footer() {
   const links = NAV.concat({ id: "booking", label: "Book Now" });
   return (
     <footer className="border-t-[3px] border-brand-red bg-charcoal text-white">
-      <div className="mx-auto max-w-[1280px] px-5 pt-16 pb-8">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5 pt-16 pb-8">
         <div className="grid gap-10 lg:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
