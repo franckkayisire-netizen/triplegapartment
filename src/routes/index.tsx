@@ -589,7 +589,7 @@ function PriceCard({ tone, title, badge, price, unit, strike, sub, priceTextClas
         <div className="mt-5">
           {strike && <div className="text-[18px] text-brand-gray line-through">{strike}</div>}
           <div className="flex items-baseline gap-2">
-            <span className={`font-display text-[52px] font-bold leading-none ${priceTextClass} ${tone === "featured" ? "sm:text-[64px]" : ""}`}>${price}</span>
+            <span className={`font-display text-[42px] font-bold leading-none ${priceTextClass} sm:text-[52px] ${tone === "featured" ? "sm:text-[64px]" : ""}`}>${price}</span>
             <span className="text-lg text-brand-gray">{unit}</span>
           </div>
           <div className="mt-1 text-sm italic text-brand-gray">{sub}</div>
