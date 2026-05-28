@@ -889,7 +889,7 @@ function Booking() {
             </div>
           </div>
 
-          <form onSubmit={submit} className="rounded-2xl bg-white p-7 shadow-lg sm:p-10">
+          <form onSubmit={submit} className="rounded-2xl bg-white p-5 shadow-lg sm:p-7 lg:p-10">
             <h3 className="font-display text-2xl font-bold text-charcoal">Send a Booking Inquiry</h3>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
