@@ -709,6 +709,7 @@ function Location() {
               src="https://www.google.com/maps?q=Rusororo,Kigali,Rwanda&output=embed"
               width="100%"
               height={520}
+              className="h-[320px] w-full sm:h-[420px] lg:h-[520px]"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
