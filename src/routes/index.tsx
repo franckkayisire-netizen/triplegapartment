@@ -85,9 +85,9 @@ function TripleGSite() {
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-7 right-7 z-40 grid h-[58px] w-[58px] place-items-center rounded-full bg-[#25d366] text-white shadow-[0_4px_20px_rgba(37,211,102,0.5)]"
+        className="fixed bottom-5 right-4 z-40 grid h-14 w-14 place-items-center rounded-full bg-[#25d366] text-white shadow-[0_4px_20px_rgba(37,211,102,0.5)] sm:bottom-7 sm:right-7 sm:h-[58px] sm:w-[58px]"
       >
-        <span className="text-[26px]">💬</span>
+        <span className="text-[24px] sm:text-[26px]">💬</span>
         <span className="pointer-events-none absolute inset-0 rounded-full bg-[#25d366] animate-pulse-ring" />
       </a>
 
@@ -96,7 +96,7 @@ function TripleGSite() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
-          className="fixed bottom-7 left-7 z-40 grid h-[46px] w-[46px] place-items-center rounded-full bg-brand-red text-white shadow-lg transition hover:bg-brand-red-dark"
+          className="fixed bottom-5 left-4 z-40 grid h-11 w-11 place-items-center rounded-full bg-brand-red text-white shadow-lg transition hover:bg-brand-red-dark sm:bottom-7 sm:left-7 sm:h-[46px] sm:w-[46px]"
         >
           <span className="text-xl leading-none">↑</span>
         </button>
@@ -146,10 +146,10 @@ function Navbar({
         scrolled ? "shadow-md" : "shadow-none"
       }`}
     >
-      <div className="mx-auto flex h-[70px] max-w-[1280px] items-center justify-between px-5">
-        <button onClick={() => linkClick("home")} className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-full bg-brand-red text-sm font-bold text-white">TG</span>
-          <span className="font-display text-[20px] font-bold text-charcoal">Triple G Apartments</span>
+      <div className="mx-auto flex h-[64px] max-w-[1280px] items-center justify-between gap-2 px-4 sm:h-[70px] sm:px-5">
+        <button onClick={() => linkClick("home")} className="flex min-w-0 items-center gap-2 sm:gap-3">
+          <span className="grid h-9 w-9 flex-none place-items-center rounded-full bg-brand-red text-sm font-bold text-white sm:h-10 sm:w-10">TG</span>
+          <span className="truncate font-display text-[16px] font-bold text-charcoal sm:text-[20px]">Triple G Apartments</span>
         </button>
 
         <nav className="hidden items-center gap-7 lg:flex">
@@ -227,18 +227,18 @@ function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-[rgba(31,41,55,0.7)]" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-5 pt-24 pb-16 text-center text-white">
-        <span className="inline-flex items-center gap-2 rounded-full bg-brand-red px-4 py-1.5 text-xs font-semibold text-white">
+      <div className="relative z-10 mx-auto w-full max-w-4xl px-4 pt-24 pb-16 text-center text-white sm:px-5">
+        <span className="inline-flex items-center gap-2 rounded-full bg-brand-red px-3 py-1.5 text-[11px] font-semibold text-white sm:px-4 sm:text-xs">
           🏆 Rwanda Hospitality Association Member
         </span>
 
-        <h1 className="mt-6 font-display text-[40px] font-bold leading-[1.1] sm:text-5xl md:text-6xl lg:text-[64px]">
+        <h1 className="mt-6 font-display text-[32px] font-bold leading-[1.15] sm:text-5xl md:text-6xl lg:text-[64px]">
           Discover Luxury Living
           <br />
           in the Heart of Kigali
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-base font-light leading-[1.7] text-white/90 sm:text-lg">
+        <p className="mx-auto mt-5 max-w-2xl text-sm font-light leading-[1.7] text-white/90 sm:mt-6 sm:text-lg">
           3 modern fully furnished apartments · 12 bedrooms total.
           <br className="hidden sm:block" />
           Book a single room from $65/night or entire apartment from $199/night.
@@ -246,14 +246,14 @@ function Hero() {
           200m from Intare Arena · 10 min from Kigali Airport & Health City.
         </p>
 
-        <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="#booking" className="inline-flex h-12 items-center justify-center rounded bg-brand-red px-7 font-semibold text-white transition hover:bg-brand-red-dark">
+        <div className="mt-8 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:items-center">
+          <a href="#booking" className="inline-flex h-12 items-center justify-center rounded bg-brand-red px-6 text-sm font-semibold text-white transition hover:bg-brand-red-dark sm:px-7 sm:text-base">
             Book Your Stay Now
           </a>
-          <a href="#apartments" className="inline-flex h-12 items-center justify-center rounded border-2 border-white px-7 font-semibold text-white transition hover:bg-white hover:text-charcoal">
+          <a href="#apartments" className="inline-flex h-12 items-center justify-center rounded border-2 border-white px-6 text-sm font-semibold text-white transition hover:bg-white hover:text-charcoal sm:px-7 sm:text-base">
             View Apartments
           </a>
-          <a href={WHATSAPP} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#25d366] px-7 font-semibold text-white transition hover:brightness-110">
+          <a href={WHATSAPP} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#25d366] px-6 text-sm font-semibold text-white transition hover:brightness-110 sm:px-7 sm:text-base">
             💬 WhatsApp Us
           </a>
         </div>
@@ -309,11 +309,11 @@ function About() {
   ];
 
   return (
-    <section id="about" className="bg-white py-24">
+    <section id="about" className="bg-white py-16 sm:py-24">
       <div className="mx-auto grid max-w-[1280px] gap-14 px-5 lg:grid-cols-[55%_45%] lg:items-center">
         <div>
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">About Us</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px] sm:leading-[1.1]">
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px] sm:leading-[1.1]">
             Welcome to Triple G Apartments
           </h2>
           <p className="mt-6 text-base leading-[1.8] text-brand-gray">
@@ -346,7 +346,7 @@ function About() {
           <img
             src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200"
             alt="Modern furnished living room at Triple G Apartments"
-            className="h-[420px] w-full rounded-lg object-cover shadow-xl lg:h-[520px]"
+            className="h-[300px] w-full rounded-lg object-cover shadow-xl sm:h-[420px] lg:h-[520px]"
           />
           <div className="absolute -bottom-5 left-5 rounded bg-brand-gold px-5 py-3 text-charcoal shadow-lg">
             <div className="text-sm font-bold">RHA Member</div>
@@ -372,11 +372,11 @@ function Apartments() {
   }, [guests, nights]);
 
   return (
-    <section id="apartments" className="bg-brand-bg py-24">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="apartments" className="bg-brand-bg py-16 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Our Spaces</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">Flexible Booking Options</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">Flexible Booking Options</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-brand-gray">
             Book exactly what you need — a room, an apartment, or the entire property.
           </p>
@@ -589,7 +589,7 @@ function PriceCard({ tone, title, badge, price, unit, strike, sub, priceTextClas
         <div className="mt-5">
           {strike && <div className="text-[18px] text-brand-gray line-through">{strike}</div>}
           <div className="flex items-baseline gap-2">
-            <span className={`font-display text-[52px] font-bold leading-none ${priceTextClass} ${tone === "featured" ? "sm:text-[64px]" : ""}`}>${price}</span>
+            <span className={`font-display text-[42px] font-bold leading-none ${priceTextClass} sm:text-[52px] ${tone === "featured" ? "sm:text-[64px]" : ""}`}>${price}</span>
             <span className="text-lg text-brand-gray">{unit}</span>
           </div>
           <div className="mt-1 text-sm italic text-brand-gray">{sub}</div>
@@ -633,11 +633,11 @@ function Amenities() {
     ["💼", "Workspace"], ["🚗", "Free Parking"], ["🍽️", "Breakfast Option"], ["🅿️", "2 Cars/Apartment"],
   ];
   return (
-    <section id="amenities" className="bg-brand-red py-24 text-white">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="amenities" className="bg-brand-red py-16 sm:py-24 text-white">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-white/90">What's Included</div>
-          <h2 className="mt-3 font-display text-4xl font-bold sm:text-[48px]">Everything You Need, Already Here</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold sm:text-[48px]">Everything You Need, Already Here</h2>
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -665,11 +665,11 @@ function Location() {
   ];
 
   return (
-    <section id="location" className="bg-white py-24">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="location" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Find Us</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">Perfectly Located in Kigali</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">Perfectly Located in Kigali</h2>
         </div>
 
         <div className="mt-12 grid gap-10 lg:grid-cols-[45%_55%] lg:items-start">
@@ -709,6 +709,7 @@ function Location() {
               src="https://www.google.com/maps?q=Rusororo,Kigali,Rwanda&output=embed"
               width="100%"
               height={520}
+              className="h-[320px] w-full sm:h-[420px] lg:h-[520px]"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
@@ -724,20 +725,19 @@ function Location() {
 /* ---------------- Gallery ---------------- */
 function Gallery({ onOpen }: { onOpen: (url: string) => void }) {
   return (
-    <section id="gallery" className="bg-brand-bg py-24">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="gallery" className="bg-brand-bg py-16 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Photo Gallery</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">A Glimpse Inside Triple G</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">A Glimpse Inside Triple G</h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3">
           {GALLERY.map((g, i) => (
             <button
               key={i}
               onClick={() => onOpen(g.url)}
-              className={`group relative overflow-hidden rounded-lg ${g.span ? "md:col-span-2" : ""}`}
-              style={{ height: g.span ? 320 : 240 }}
+              className={`group relative aspect-[4/3] overflow-hidden rounded-lg sm:aspect-square ${g.span ? "md:col-span-2 md:aspect-[16/9]" : ""}`}
             >
               <img src={g.url} alt={g.alt} className="h-full w-full object-cover transition group-hover:scale-105" />
               <div className="absolute inset-0 grid place-items-center bg-brand-red/0 text-white opacity-0 transition group-hover:bg-brand-red/30 group-hover:opacity-100">
@@ -776,11 +776,11 @@ function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="bg-white py-24">
-      <div className="mx-auto max-w-[1280px] px-5">
+    <section id="testimonials" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Guest Reviews</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">What Our Guests Say</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">What Our Guests Say</h2>
         </div>
 
         <div className="mt-12 grid gap-7 lg:grid-cols-3">
@@ -840,12 +840,12 @@ function Booking() {
   const input = "h-12 w-full rounded-lg border border-border bg-white px-4 text-sm text-charcoal outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20";
 
   return (
-    <section id="booking" className="bg-brand-bg py-24">
+    <section id="booking" className="bg-brand-bg py-16 sm:py-24">
       <a id="contact" className="block -mt-24 pt-24" />
-      <div className="mx-auto max-w-[1280px] px-5">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">Book Now</div>
-          <h2 className="mt-3 font-display text-4xl font-bold text-charcoal sm:text-[48px]">Ready to Book? Let's Make It Happen</h2>
+          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal sm:text-[48px]">Ready to Book? Let's Make It Happen</h2>
           <p className="mx-auto mt-3 max-w-xl text-lg text-brand-gray">We respond within 1 hour · 7 days a week</p>
         </div>
 
@@ -889,7 +889,7 @@ function Booking() {
             </div>
           </div>
 
-          <form onSubmit={submit} className="rounded-2xl bg-white p-7 shadow-lg sm:p-10">
+          <form onSubmit={submit} className="rounded-2xl bg-white p-5 shadow-lg sm:p-7 lg:p-10">
             <h3 className="font-display text-2xl font-bold text-charcoal">Send a Booking Inquiry</h3>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -957,7 +957,7 @@ function Footer() {
   const links = NAV.concat({ id: "booking", label: "Book Now" });
   return (
     <footer className="border-t-[3px] border-brand-red bg-charcoal text-white">
-      <div className="mx-auto max-w-[1280px] px-5 pt-16 pb-8">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-5 pt-16 pb-8">
         <div className="grid gap-10 lg:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
