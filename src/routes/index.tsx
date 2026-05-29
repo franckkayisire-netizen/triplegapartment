@@ -11,10 +11,19 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const WHATSAPP = "https://wa.me/250788300194";
-const WHATSAPP_BOOK = "https://wa.me/250788300194?text=Hello%20Triple%20G%20Apartments%2C%20I%20would%20like%20to%20make%20a%20booking.";
+const WA_BASE = "https://wa.me/250788851416";
+const WHATSAPP = WA_BASE;
+const WHATSAPP_BOOK = `${WA_BASE}?text=Hello%20Triple%20G%20Apartments%2C%20I%20would%20like%20to%20make%20a%20booking.`;
+const WHATSAPP_ROOM = `${WA_BASE}?text=Hello%20Triple%20G%20Apartments%2C%20I%20would%20like%20to%20book%20a%20Single%20Room.`;
+const WHATSAPP_APT = `${WA_BASE}?text=Hello%20Triple%20G%20Apartments%2C%20I%20would%20like%20to%20book%20an%20Entire%20Apartment.`;
+const WHATSAPP_PROPERTY = `${WA_BASE}?text=Hello%20Triple%20G%20Apartments%2C%20I%20would%20like%20to%20book%20the%20Entire%20Property.`;
+const WHATSAPP_DIRECTIONS = `${WA_BASE}?text=Hello%2C%20I%20need%20directions%20to%20Triple%20G%20Apartments.`;
+const WHATSAPP_HERO = `${WA_BASE}?text=Hello%20Triple%20G%20Apartments%2C%20I%20am%20interested%20in%20your%20apartments.`;
 const EMAIL = "brtripplegaptments14@gmail.com";
-const PHONE = "+250788300194";
+const PHONE = "+250788851416";
+const PHONE_DISPLAY = "+250 788 851 416";
+const PHONE_SECONDARY = "+250738303496";
+const PHONE_SECONDARY_DISPLAY = "+250 738 303 496";
 
 const NAV = [
   { id: "home", label: "Home" },
