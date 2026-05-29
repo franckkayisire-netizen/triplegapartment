@@ -581,8 +581,8 @@ function PriceCard({ tone, title, badge, price, unit, strike, sub, priceTextClas
     cta.variant === "solid"
       ? "bg-brand-red text-white hover:bg-brand-red-dark h-[52px]"
       : cta.variant === "gold"
-      ? "bg-brand-gold text-charcoal hover:brightness-95 h-12"
-      : "border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white h-12";
+      ? "bg-brand-gold text-charcoal hover:brightness-95 h-[52px]"
+      : "border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white h-[52px]";
 
   return (
     <div className={wrap}>
@@ -608,7 +608,24 @@ function PriceCard({ tone, title, badge, price, unit, strike, sub, priceTextClas
           <div className="mt-1 text-sm italic text-brand-gray">{sub}</div>
         </div>
 
-        <div className="mt-5 overflow-hidden rounded-lg border border-border">
+        {/* Mobile: stacked card blocks */}
+        <div className="mt-5 space-y-2 md:hidden">
+          {rows.map((r, i) => {
+            const price = r[0].toLowerCase() === "nightly" && !/\//.test(r[1]) ? `${r[1]}/night` : r[1];
+            return (
+              <div key={i} className="rounded-lg border border-[#e5e7eb] bg-[#f9fafb] px-4 py-3">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.1em] text-brand-gray">{r[0]}</div>
+                <div className="mt-1 flex items-center justify-between gap-3">
+                  <span className="text-[18px] font-bold text-charcoal">{price}</span>
+                  {r[2] && <span className="whitespace-nowrap text-[13px] font-bold text-brand-red">{`${r[2]} ✓`}</span>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Desktop: compact table */}
+        <div className="mt-5 hidden overflow-hidden rounded-lg border border-border md:block">
           {rows.map((r, i) => (
             <div key={i} className={`flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-2.5 text-sm ${i % 2 ? "bg-brand-bg" : "bg-white"}`}>
               <span className="text-brand-gray">{r[0]}</span>
