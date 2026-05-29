@@ -4,6 +4,11 @@ import heroImage from "@/assets/gallery/living-leather.jpg";
 
 export const Route = createFileRoute("/")({
   component: TripleGSite,
+  head: () => ({
+    links: [
+      { rel: "preload", as: "image", href: heroImage, fetchpriority: "high" },
+    ],
+  }),
 });
 
 const WHATSAPP = "https://wa.me/250788300194";
@@ -237,6 +242,9 @@ function Hero() {
         src={heroImage}
         alt="Triple G Apartments — luxury living room in Kigali"
         className="absolute inset-0 h-full w-full object-cover"
+        fetchPriority="high"
+        loading="eager"
+        decoding="async"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-[rgba(31,41,55,0.7)]" />
 
