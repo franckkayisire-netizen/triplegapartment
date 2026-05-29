@@ -233,8 +233,8 @@ function Hero() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden bg-charcoal"
     >
       <img
-        src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920"
-        alt="Luxury Kigali apartment interior"
+        src={heroImage}
+        alt="Triple G Apartments — luxury living room in Kigali"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-[rgba(31,41,55,0.7)]" />
