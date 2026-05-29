@@ -175,7 +175,7 @@ function Navbar({
     >
       <div className="mx-auto flex h-[64px] max-w-[1280px] items-center justify-between gap-2 px-4 sm:h-[70px] sm:px-5">
         <button onClick={() => linkClick("home")} className="flex min-w-0 items-center gap-2 sm:gap-3">
-          <span className="grid h-9 w-9 flex-none place-items-center rounded-full bg-brand-red text-sm font-bold text-white sm:h-10 sm:w-10">TG</span>
+          <img src="/logo.png" alt="Triple G Apartments logo" style={{ height: 44, width: "auto", objectFit: "contain", borderRadius: 4 }} className="flex-none" />
           <span className="truncate font-display text-[16px] font-bold text-charcoal sm:text-[20px]">Triple G Apartments</span>
         </button>
 
@@ -283,7 +283,7 @@ function Hero() {
           <a href="#apartments" className="inline-flex h-12 items-center justify-center rounded border-2 border-white px-6 text-sm font-semibold text-white transition hover:bg-white hover:text-charcoal sm:px-7 sm:text-base">
             View Apartments
           </a>
-          <a href={WHATSAPP} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#25d366] px-6 text-sm font-semibold text-white transition hover:brightness-110 sm:px-7 sm:text-base">
+          <a href={WHATSAPP_HERO} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#25d366] px-6 text-sm font-semibold text-white transition hover:brightness-110 sm:px-7 sm:text-base">
             💬 WhatsApp Us
           </a>
         </div>
@@ -454,7 +454,7 @@ function Apartments() {
               "Shared kitchen access",
               "Free parking",
             ]}
-            cta={{ label: "Book a Room", href: WHATSAPP_BOOK, variant: "outline" }}
+            cta={{ label: "Book a Room", href: WHATSAPP_ROOM, variant: "outline" }}
           />
 
           <PriceCard
@@ -477,7 +477,7 @@ function Apartments() {
               "WiFi, DSTV & free parking",
               "Up to 8 guests",
             ]}
-            cta={{ label: "Book Apartment", href: WHATSAPP_BOOK, variant: "solid" }}
+            cta={{ label: "Book Apartment", href: WHATSAPP_APT, variant: "solid" }}
           />
 
           <PriceCard
@@ -501,7 +501,7 @@ function Apartments() {
               "All kitchens & living areas",
               "Event & retreat ready",
             ]}
-            cta={{ label: "Book Full Property", href: WHATSAPP_BOOK, variant: "gold" }}
+            cta={{ label: "Book Full Property", href: WHATSAPP_PROPERTY, variant: "gold" }}
           />
         </div>
 
@@ -749,7 +749,7 @@ function Location() {
               <div className="mt-1 text-xs text-brand-gray">Early check-in & late check-out available (fee applies)</div>
             </div>
 
-            <a href={WHATSAPP} target="_blank" rel="noreferrer" className="flex h-12 w-full items-center justify-center rounded-lg bg-[#25d366] font-semibold text-white transition hover:brightness-110">
+            <a href={WHATSAPP_DIRECTIONS} target="_blank" rel="noreferrer" className="flex h-12 w-full items-center justify-center rounded-lg bg-[#25d366] font-semibold text-white transition hover:brightness-110">
               💬 Need Directions? WhatsApp Us
             </a>
           </div>
@@ -910,12 +910,13 @@ function Booking() {
 
             <ul className="space-y-3">
               {[
-                ["📞", "Phone", PHONE, `tel:${PHONE}`],
+                ["📞", "Phone", PHONE_DISPLAY, `tel:${PHONE}`],
+                ["📞", "Phone", PHONE_SECONDARY_DISPLAY, `tel:${PHONE_SECONDARY}`],
                 ["✉️", "Email", EMAIL, `mailto:${EMAIL}`],
                 ["📍", "Address", "Rusororo, Gasabo District, Kigali, Rwanda", ""],
                 ["🕐", "Hours", "Check-in: 2:00 PM | Check-out: 11:00 AM", ""],
-              ].map(([e, l, v, href]) => (
-                <li key={l} className="flex items-start gap-3 rounded-lg bg-white p-4 shadow-sm">
+              ].map(([e, l, v, href], i) => (
+                <li key={`${l}-${i}`} className="flex items-start gap-3 rounded-lg bg-white p-4 shadow-sm">
                   <span className="shrink-0 text-xl">{e}</span>
                   <div className="min-w-0 flex-1">
                     <div className="text-xs font-semibold uppercase tracking-wider text-brand-gray">{l}</div>
@@ -1011,7 +1012,7 @@ function Footer() {
         <div className="grid gap-10 lg:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
-              <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-red text-sm font-bold text-white">TG</span>
+              <img src="/logo.png" alt="Triple G Apartments logo" style={{ height: 48, width: "auto", objectFit: "contain", borderRadius: 4 }} />
               <span className="font-display text-[22px] font-bold text-brand-gold">Triple G Apartments</span>
             </div>
             <p className="mt-4 text-sm leading-[1.8] text-white/70">Your Home Away From Home in Kigali</p>
@@ -1037,7 +1038,7 @@ function Footer() {
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">Contact Us</div>
             <ul className="mt-4 space-y-3 text-sm text-white/75">
-              <li>📞 <a href={`tel:${PHONE}`} className="hover:text-brand-gold">+250 788 300 194</a></li>
+              <li>📞 <a href={`tel:${PHONE}`} className="hover:text-brand-gold">{PHONE_DISPLAY}</a> / <a href={`tel:${PHONE_SECONDARY}`} className="hover:text-brand-gold">{PHONE_SECONDARY_DISPLAY}</a></li>
               <li>✉️ <a href={`mailto:${EMAIL}`} className="hover:text-brand-gold break-all">{EMAIL}</a></li>
               <li>📍 Rusororo, Gasabo District, Kigali, Rwanda</li>
               <li>🕐 Check-in 2PM | Check-out 11AM</li>
