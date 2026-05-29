@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
+import heroImage from "@/assets/gallery/living-leather.jpg";
 
 export const Route = createFileRoute("/")({
   component: TripleGSite,
