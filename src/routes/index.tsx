@@ -581,8 +581,8 @@ function PriceCard({ tone, title, badge, price, unit, strike, sub, priceTextClas
     cta.variant === "solid"
       ? "bg-brand-red text-white hover:bg-brand-red-dark h-[52px]"
       : cta.variant === "gold"
-      ? "bg-brand-gold text-charcoal hover:brightness-95 h-12"
-      : "border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white h-12";
+      ? "bg-brand-gold text-charcoal hover:brightness-95 h-[52px]"
+      : "border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white h-[52px]";
 
   return (
     <div className={wrap}>
