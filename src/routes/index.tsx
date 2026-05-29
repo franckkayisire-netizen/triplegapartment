@@ -365,11 +365,14 @@ function About() {
 
         <div className="relative">
           <img
-            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200"
-            alt="Modern furnished living room at Triple G Apartments"
-            className="aspect-[4/3] w-full rounded-lg object-cover shadow-xl sm:aspect-[4/3] lg:aspect-[5/4]"
+            src={livingLeather}
+            alt="Warm furnished living room with leather sofas at Triple G Apartments, Kigali"
+            className="w-full rounded-lg object-cover shadow-xl"
+            style={{ height: "520px" }}
+            loading="lazy"
+            decoding="async"
           />
-          <div className="absolute -bottom-5 left-5 rounded bg-brand-gold px-5 py-3 text-charcoal shadow-lg">
+          <div className="absolute bottom-5 left-5 rounded bg-brand-gold px-5 py-3 text-charcoal shadow-lg">
             <div className="text-sm font-bold">RHA Member</div>
             <div className="text-xs">Since 2020</div>
           </div>
