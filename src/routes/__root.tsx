@@ -81,8 +81,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Triple G Apartments — Luxury Short-Stay in Kigali, Rwanda" },
       { name: "twitter:description", content: "Modern furnished apartments in Rusororo, Kigali — 200m from Intare Arena, 10 min from Kigali Airport & Health City. Rooms from $65, apartments from $199/night." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/526a2916-f222-41bf-82ca-c7ccc88d40ec" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/526a2916-f222-41bf-82ca-c7ccc88d40ec" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/c7cbf575-1c05-4449-8808-102c8ef7bf71" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/c7cbf575-1c05-4449-8808-102c8ef7bf71" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
